@@ -1,0 +1,35 @@
+- id: start
+  title: "The Summoning"
+  description: "You find yourself standing among a massive pile of bones, the same one you were summoned from not long ago"
+  npcs: ["summoning:oldbones"]
+  #  script: 
+  items:
+    - id: "summoning:bonechest"
+      respawnChance: 20
+      replaceOnRespawn: true # when this chest respawns completely replace it so its contents get refreshed
+  exits:
+    - roomId: "summoning:north-road1"
+      direction: north
+      leaveMessage: "You make your way up the path towards the Citadel of Bones"
+- id: north-road1
+  title: "The North Road"
+  description: "You walk on a well worn path skirted on either side by old dead looking trees"
+  exits:
+    - roomid: "summoning:start"
+      direction: south
+    - roomid: "north-road2"
+      direction: north
+- id: north-road2
+  title: "The North Road"
+  description: "You walk on a well worn path skirted on either side by old dead looking trees"
+  exits:
+    - roomid: "summoning:north-road1"
+      direction: south
+    - roomid: "north-road3"
+      direction: north
+- id: north-road2
+  title: "The North Road"
+  description: "You walk on a well worn path skirted on either side by old dead looking trees"
+  exits:
+    - roomid: "summoning:north-road2"
+      direction: south

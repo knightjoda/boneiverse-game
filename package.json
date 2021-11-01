@@ -1,0 +1,14 @@
+{
+    "name": "boneiverse-game",
+    "version": "1.0.0",
+    "description": "Boneiverse Game World",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/knightjoda/boneiverse-game.git"
+    },
+    "author": "Josiah Beckett",
+    "bugs": {
+        "url": "https://github.com/knightjoda/boneiverse-game/issues"
+    },
+    "homepage": "https://github.com/knightjoda/boneiverse-game#readme"
+}

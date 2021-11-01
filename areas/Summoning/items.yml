@@ -1,0 +1,11 @@
+- id: "bonechest"
+  type: CONTAINER
+  name: "Bone Chest"
+  roomDesc: "A bone chest rests in the corner"
+  keywords: [ "bone", "chest" ]
+  description: "A chest made out of bones, it is barely held together by rotting sinew."
+  items: [ "limbo:rustysword", "limbo:leathervest", "limbo:potionhealth1", "limbo:potionstrength1" ]
+  closed: true
+  maxItems: 5
+  metadata:
+    noPickup: true
