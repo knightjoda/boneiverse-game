@@ -4,8 +4,81 @@
   roomDesc: "A bone chest rests in the corner"
   keywords: [ "bone", "chest" ]
   description: "A chest made out of bones, it is barely held together by rotting sinew."
-  items: [ "limbo:rustysword", "limbo:leathervest", "limbo:potionhealth1", "limbo:potionstrength1" ]
+  items: [ "summoning:rustysword", "summoning:leathervest", "summoning:potionhealth1", "summoning:potionstrength1" ]
   closed: true
   maxItems: 5
   metadata:
     noPickup: true
+- id: "rustysword"
+  name: "Rusty Sword"
+  type: WEAPON
+  roomDesc: "Rusted Sword"
+  keywords: [ "sword", "rusty", "metal", "rusted" ]
+  description: "An arm's-length, jagged metal sword discolored with red corrosion. The worn leather grip barely held on by fraying thread."
+  metadata:
+    level: 1
+    slot: 'wield'
+    itemLevel: 1
+    quality: common
+    minDamage: 7
+    maxDamage: 15
+    speed: 2.8
+    stats:
+      critical: 1
+- id: leathervest
+  name: "Leather Vest"
+  type: ARMOR
+  roomDesc: "Leather Vest"
+  keywords: ["leather", "vest"]
+  description: "A plain leather vest. Better than nothing."
+  metadata:
+    quality: common
+    slot: "chest"
+    level: 1
+    itemLevel: 1
+    stats:
+      armor: 20
+    sellable:
+      value: 30
+      currency: gold
+- id: potionhealth1
+  name: "Potion of Health I"
+  roomDesc: "Potion of Health I"
+  keywords: [ "potion", "health" ]
+  type: POTION
+  metadata:
+    level: 1
+    # usable has two variants: spell, and effect
+    usable:
+      # this is the spell variant, you specify a skill of type SPELL
+      spell: "potion"
+      # charges/destroyOnDepleted lets you create consumable items
+      # without specifying charges the item can be used forever
+      charges: 5
+      destroyOnDepleted: true
+      # cooldown before item can be used again
+      cooldown: 30
+      # spell configuration, spell can access it via this.options
+      options:
+        restores: 30
+        stat: "health"
+- id: potionstrength1
+  name: "Potion of Strength I"
+  roomDesc: "Potion of Strength I"
+  keywords: [ "potion", "strength" ]
+  type: POTION
+  metadata:
+    level: 1
+    usable:
+      # this is the effect variant, you specify an effect name instead of a spell
+      effect: "potion.buff"
+      charges: 2
+      destroyOnDepleted: true
+      # effect config, see Effect docs. `name` is auto-populated with the item name
+      config:
+        description: "Increases strength by <b>10</b> for <b>15</b> seconds"
+        duration: 15000
+      # effect state, see Effect docs
+      state:
+        magnitude: 10
+        stat: "strength"
