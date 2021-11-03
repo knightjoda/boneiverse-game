@@ -5,12 +5,14 @@
   items:
     - id: "summoning:bonechest"
       respawnChance: 20
-      replaceOnRespawn: true # when this chest respawns completely replace it so its contents get refreshed
+      replaceOnRespawn: true
   script: "start"
   exits:
     - roomId: "summoning:northroad1"
       direction: north
       leaveMessage: "You make your way up the path towards the Citadel of Bones"
+    - roomId: "summoning:forest-03"
+      direction: north
 - id: northroad1
   title: "The North Road"
   description: "You walk on a well worn path skirted on either side by old dead looking trees"
@@ -33,3 +35,103 @@
   exits:
     - roomId: "summoning:northroad2"
       direction: south
+- id: forest-01
+  title: Forest
+  coordinates: [-2, -2, 0]
+  description: "You stand among large dead trees it it is difficult to tell direction and there is no real path"
+- id: forest-02
+  title: Forest
+  coordinates: [-1, -2, 0]
+  description: "You stand among large dead trees it it is difficult to tell direction and there is no real path"
+- id: forest-03
+  title: Forest
+  coordinates: [0, -2, 0]
+  description: "You stand among large dead trees it it is difficult to tell direction and there is no real path"
+- id: forest-04
+  title: Forest
+  coordinates: [1, -2, 0]
+  description: "You stand among large dead trees it it is difficult to tell direction and there is no real path"
+- id: forest-05
+  title: Forest
+  coordinates: [2, -2, 0]
+  description: "You stand among large dead trees it it is difficult to tell direction and there is no real path"
+- id: forest-06
+  title: Forest
+  coordinates: [-2, -1, 0]
+  description: "You stand among large dead trees it it is difficult to tell direction and there is no real path"
+- id: forest-07
+  title: Forest
+  coordinates: [-1, -1, 0]
+  description: "You stand among large dead trees it it is difficult to tell direction and there is no real path"
+- id: forest-08
+  title: Forest
+  coordinates: [0, -1, 0]
+  description: "You stand among large dead trees it it is difficult to tell direction and there is no real path"
+- id: forest-09
+  title: Forest
+  coordinates: [1, -1, 0]
+  description: "You stand among large dead trees it it is difficult to tell direction and there is no real path"
+- id: forest-10
+  title: Forest
+  coordinates: [2, -1, 0]
+  description: "You stand among large dead trees it it is difficult to tell direction and there is no real path"
+- id: forest-11
+  title: Forest
+  coordinates: [-2, 0, 0]
+  description: "You stand among large dead trees it it is difficult to tell direction and there is no real path"
+- id: forest-12
+  title: Forest
+  coordinates: [-1, 0, 0]
+  description: "You stand among large dead trees it it is difficult to tell direction and there is no real path"
+- id: forest-13
+  title: Forest
+  coordinates: [0, 0, 0]
+  description: "You stand among large dead trees it it is difficult to tell direction and there is no real path"
+- id: forest-14
+  title: Forest
+  coordinates: [1, 0, 0]
+  description: "You stand among large dead trees it it is difficult to tell direction and there is no real path"
+- id: forest-15
+  title: Forest
+  coordinates: [2, 0, 0]
+  description: "You stand among large dead trees it it is difficult to tell direction and there is no real path"
+- id: forest-16
+  title: Forest
+  coordinates: [-2, 1, 0]
+  description: "You stand among large dead trees it it is difficult to tell direction and there is no real path"
+- id: forest-17
+  title: Forest
+  coordinates: [-1, 1, 0]
+  description: "You stand among large dead trees it it is difficult to tell direction and there is no real path"
+- id: forest-18
+  title: Forest
+  coordinates: [0, 1, 0]
+  description: "You stand among large dead trees it it is difficult to tell direction and there is no real path"
+- id: forest-19
+  title: Forest
+  coordinates: [1, 1, 0]
+  description: "You stand among large dead trees it it is difficult to tell direction and there is no real path"
+- id: forest-20
+  title: Forest
+  coordinates: [2, 1, 0]
+  description: "You stand among large dead trees it it is difficult to tell direction and there is no real path"
+- id: forest-21
+  title: Forest
+  coordinates: [-2, 2, 0]
+  description: "You stand among large dead trees it it is difficult to tell direction and there is no real path"
+- id: forest-22
+  title: Forest
+  coordinates: [-1, 2, 0]
+  description: "You stand among large dead trees it it is difficult to tell direction and there is no real path"
+- id: forest-23
+  title: Forest
+  coordinates: [0, 2, 0]
+  description: "You stand among large dead trees it it is difficult to tell direction and there is no real path"
+- id: forest-24
+  title: Forest
+  coordinates: [1, 2, 0]
+  description: "You stand among large dead trees it it is difficult to tell direction and there is no real path"
+- id: forest-25
+  title: Forest
+  coordinates: [2, 2, 0]
+  description: "You stand among large dead trees it it is difficult to tell direction and there is no real path"
