@@ -33,7 +33,7 @@
   description: "A plain leather vest. Better than nothing."
   metadata:
     quality: common
-    slot: "chest"
+    slot: 'chest'
     level: 1
     itemLevel: 1
     stats:
