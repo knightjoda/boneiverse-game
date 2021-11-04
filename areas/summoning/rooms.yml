@@ -12,7 +12,7 @@
       direction: north
       leaveMessage: "You make your way up the path towards the Citadel of Bones"
     - roomId: "summoning:forest-03"
-      direction: north
+      direction: south
 - id: northroad1
   title: "The North Road"
   description: "You walk on a well worn path skirted on either side by old dead looking trees"
@@ -46,9 +46,6 @@
 - id: forest-03
   title: Forest
   coordinates: [0, -2, 0]
-  exits:
-    - roomId: "summoning:start"
-      direction: north
   description: "You stand among large dead trees it it is difficult to tell direction and there is no real path"
 - id: forest-04
   title: Forest

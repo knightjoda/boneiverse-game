@@ -1,0 +1,5 @@
+- id: oldbones
+  keywords: ["old", "bones"]
+  name: "Old Bones"
+  script: 'oldbones'
+  description: "A old smashed skeleton barely more than a ribcage and a skill is propped up here."
