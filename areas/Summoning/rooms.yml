@@ -47,6 +47,9 @@
   title: Forest
   coordinates: [0, -2, 0]
   description: "You stand among large dead trees it it is difficult to tell direction and there is no real path"
+  exits:
+    - roomId: "summoning:start"
+      direction: north
 - id: forest-04
   title: Forest
   coordinates: [1, -2, 0]
